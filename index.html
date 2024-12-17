@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Rammetto+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Top 10 Javascript Questions and Answers</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header-title">
+        <h2 class="header title__intro">learn to code javascript</h2>
+        <h1 class="header title__para">Top 10 JS Questions with solution</h1>
+      </div>
+      <div class="container">
+        <h3>Reverse String</h3>
+        <p>
+          Reversing a string is one of the most frequently asked JavaScript
+          question in the technical round of interview. Interviewers may ask you
+          to write different ways to reverse a string, or they may ask you to
+          reverse a string without using in-built methods, or they may even ask
+          you to reverse a string using recursion.
+        </p>
+        <br />
+
+        <textarea name="" id="text_area_reverseString">
+            function reverseString(str) {
+                let reversedWord = [];
+              
+                for (let i = str.length - 1; i >= 0; i--) {
+                  reversedWord += str[i];
+                }
+              
+                return reversedWord;
+              }
+              
+              console.log(reverseString("Hello javascript programming"));
+              
+              result: gnimmargorp tpircsavaj olleH
+
+           </textarea
+        >
+
+        <!---------------------------longest word---------------------------->
+
+        <br />
+        <br />
+        <h3>longest word</h3>
+        <p>find the longest word in string</p>
+        <br />
+        <textarea name="" id="text_area_longestWord">
+            function findLongestWord(sentence) {
+                let words = sentence.split(" ");
+                let longestWord = "";
+              
+                for (let word of words) {
+                  if (word.length > longestWord.length) {
+                    longestWord = word;
+                  }
+                }
+                return longestWord;
+              }
+              
+              console.log(findLongestWord("i love javascript programming"));
+             Result: programming
+        </textarea>
+        <!-------------------------------PALINDROME---------------------------------->
+        <br />
+        <br />
+        <h3>palindrome</h3>
+        <p>
+          A palindrome is a word, phrase, number, or other sequence of
+          characters which reads the same backward or forward. The word
+          “palindrome” was first coined by the English playwright Ben Jonson in
+          the 17th century, from the Greek roots palin (“again”) and dromos
+          (“way, direction”). — src. Wikipedia
+        </p>
+        <br />
+        <textarea name="" id="text_area_palindrome">
+            function checkPalindrome(word) {
+                let stringOne = word.split("").reverse().join("");
+              
+                return word === stringOne;
+              }
+              
+              console.log(checkPalindrome("kayak"));
+
+              Result: true; boolean result.
+         </textarea
+        >
+        <!----------------------------DUPLICATE----------------------------------->
+        <br />
+        <br />
+        <h3>Duplicate</h3>
+        <p>
+          Duplicate elements can be a nuisance when working with arrays in
+          JavaScript. They not only clutter your data but can also affect the
+          performance of your code. Fortunately, JavaScript offers several
+          efficient methods to remove duplicates from arrays, each with its own
+          advantages and use cases. In this article, we'll delve into six
+          distinct approaches to remove duplicates from arrays, ranging from
+          utilizing built-in methods like Set to more custom solutions for
+          arrays of objects.
+        </p>
+        <br />
+        <textarea name="" id="text_area_duplicate">
+            function removeDuplicate(num) {
+                let uniqueElements = [];
+              
+                for (let i = 0; i < num.length; i++) {
+                  if (uniqueElements.indexOf(num[i]) === -1) {
+                    uniqueElements.push(num[i]);
+                  }
+                }
+              
+                return uniqueElements;
+              }
+              
+              console.log(removeDuplicate([1, 2, 2, 3, 3, 4, 4, 5, 6, 7, 8, 8]));
+
+              Result: (8) [1, 2, 3, 4, 5, 6, 7, 8]              
+        </textarea>
+        <!-----------------------------ANAGRAMS-------------------------->
+        <br />
+        <br />
+        <h3>Anagrams</h3>
+        <p>
+          An anagram is a word or phrase formed by rearranging the letters of a
+          different word or phrase, typically using all the original letters
+          exactly once. For example, “act” and “cat” are anagrams of each other.
+          An anagram does not have to have the same meaning as the original word
+          or phrase.
+        </p>
+        <br />
+        <textarea name="" id="text_area_anagrams">
+            function checkAnagrams(str1, str2) {
+                let wordOne = str1.split("").sort().join("");
+                let wordTwo = str2.split("").sort().join("");
+              
+                return wordOne === wordTwo;
+              }
+              
+              console.log(checkAnagrams("silent", "listen"));
+              console.log(checkAnagrams("one", "two"));
+
+              Result: true
+              Result: false
+
+        </textarea>
+        <!---------------------------GET LARGEST NUMBER ----------------------->
+        <br />
+        <br />
+        <h3>get the Largest number</h3>
+
+        <p>
+          we are going to learn about the largest element in an array in
+          JavaScript. The largest element in an array refers to the value that
+          holds the greatest numerical or lexicographic (string) order among all
+          elements present in the array.
+        </p>
+        <br />
+        <textarea name="" id="text_area_largestNumber">
+            function findLargestNumber(num) {
+                let largest = [];
+              
+                for (let i = 0; i <= num.length; i++) {
+                  if (num[i] > largest) {
+                    largest = num[i];
+                  }
+                }
+                return largest;
+              }
+              
+              console.log(findLargestNumber([328, 7, 8, 9, 10, 11]));
+              
+              result: 328
+
+        </textarea>
+
+        <!--------------------------PRIME NUMBERS------------------------->
+        <br />
+        <br />
+
+        <h3>Prime numbers</h3>
+        <br />
+        <p>
+          A prime number is a positive integer that is only divisible by 1 and
+          itself. For example, 2, 3, 5, 7, 11 are the first few prime numbers.
+        </p>
+
+        <textarea name="" id="text_area_primeNumbers">
+ 
+            function checkPrimeNumbers(num) {
+                for (let i = 2; i <= num / 2; i++) {
+                  if (num % i === 0) {
+                    return console.log("not prime number", num);
+                  }
+                }
+                return console.log("prime#", num);
+              }
+              
+              console.log(checkPrimeNumbers(7));
+              console.log(checkPrimeNumbers(10));
+              
+               Result: prime# 7
+               Result: not prime number 10
+
+        </textarea>
+        <!---------------------------FACTORIAL ------------------------>
+        <br />
+        <br />
+        <h3>Factorial number</h3>
+        <br />
+        <p>
+          When you factorialize a number, you are multiplying that number by
+          each consecutive number minus one. If your number is 5, you would
+          have: 5! = 5 * 4 * 3 * 2 * 1
+        </p>
+        <textarea name="" id="text_area_factorial">
+          function factorial(n) {
+            let res = 1;
+          
+            if (n === 0) return 1;
+            for (let i = 2; i <= n; i++) res = res * i;
+            return res;
+          }
+          
+          let n = 5;
+          
+          console.log(factorial(n));
+
+          Result: 120
+        </textarea>
+
+        <!----------------------------REMOVE WHITE SPACE ------------------------>
+        <br />
+        <br />
+        <h3>removing white space</h3>
+        <br />
+        <p>
+          you might want to make sure that there is never more than one space in
+          a row, or that there is always a space after a period (full stop),
+          etc.
+        </p>
+        <textarea name="" id="text_area_removingSpace">
+          let myString = "Hello javaScript!    let's 'have fun";
+          console.log(removeWhiteSpace(myString));
+          
+          function removeWhiteSpace(space) {
+            let result = space.replace(/\s/g, "");
+            return result;
+          }
+ 
+          Result:HellojavaScript!let's'havefun
+
+        </textarea>
+        <!--------------------------------Recursion--------------------------->
+        <br />
+        <br />
+        <h3>Recursive</h3>
+        <br />
+        <p>
+          A recursive function is a function that calls itself somewhere within
+          the body of the function. Below is a basic example of a recursive
+          function.
+        </p>
+        <textarea name="" id="text_area_recursive">
+          let z = 1;
+
+function show() {
+  console.log("counting ", z);
+  z++;
+  if (z <= 10) {
+    show();
+  } else {
+    console.log("bomb exploded. boom!!!");
+  }
+}
+
+show();
+result:
+counting  1
+counting  2
+counting  3
+counting  4
+counting  5
+counting  6
+counting  7
+counting  8
+counting  9
+counting  10
+bomb exploded. boom!!!
+
+
+
+        </textarea>
+
+        <!-- container area -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

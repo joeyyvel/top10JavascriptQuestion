@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Rammetto+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Nunito;
+}
+
+h3 {
+  color: #0a0a23;
+}
+
+p {
+  background-color: rgb(235, 208, 88);
+  width: 90%;
+}
+
+.title__intro {
+  background-color: #0a0a23;
+  color: white;
+  font-family: orbitron;
+  padding: 10px;
+}
+
+.title__para {
+  background-color: black;
+  color: yellow;
+  text-align: center;
+}
+
+.container {
+  margin: 40px;
+}
+
+#text_area_reverseString {
+  background-color: black;
+  color: rgb(161, 245, 25);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 20rem;
+  width: 90%;
+  padding: 20px;
+  font-size: 16px;
+}
+
+/* -----------longest word area--------------- */
+#text_area_longestWord {
+  background-color: black;
+  color: rgb(161, 245, 25);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 20rem;
+  width: 90%;
+  padding: 20px;
+  font-size: 16px;
+}
+
+/* ------------palindrome---------------------  */
+#text_area_palindrome {
+  background-color: black;
+  color: rgb(161, 245, 25);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 20rem;
+  width: 90%;
+  padding: 20px;
+  font-size: 16px;
+}
+
+/*-------------duplicate------------------------ */
+#text_area_duplicate {
+  background-color: black;
+  color: rgb(161, 245, 25);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 20rem;
+  width: 90%;
+  padding: 20px;
+  font-size: 16px;
+}
+
+/*--------------anagrams--------------------------*/
+#text_area_anagrams {
+  background-color: black;
+  color: rgb(161, 245, 25);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 20rem;
+  width: 90%;
+  padding: 20px;
+  font-size: 16px;
+}
+
+/*---------------largestNumber-------------------- */
+#text_area_largestNumber {
+  background-color: black;
+  color: rgb(161, 245, 25);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 20rem;
+  width: 90%;
+  padding: 20px;
+  font-size: 16px;
+}
+
+/*---------------primeNumber------------------------*/
+#text_area_primeNumbers {
+  background-color: black;
+  color: rgb(161, 245, 25);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 20rem;
+  width: 90%;
+  padding: 20px;
+  font-size: 16px;
+}
+
+/*--------------factorial---------------------------*/
+#text_area_factorial {
+  background-color: black;
+  color: rgb(161, 245, 25);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 20rem;
+  width: 90%;
+  padding: 20px;
+  font-size: 16px;
+}
+
+/*---------------remove space----------------------*/
+#text_area_removingSpace {
+  background-color: black;
+  color: rgb(161, 245, 25);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 20rem;
+  width: 90%;
+  padding: 20px;
+  font-size: 16px;
+}
+
+/*---------------recursive-------------------------*/
+#text_area_recursive {
+  background-color: black;
+  color: rgb(161, 245, 25);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 20rem;
+  width: 90%;
+  padding: 20px;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 600) {
+  body {
+    text-align: left;
+  }
+}
